@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/> 
+        <title>Quillpad - Typing in Indian Languages has never been easier</title>
+
+      
+
+
+        <script type="text/javascript">
+            var __lang__='Hindi';
+        </script>
+        <script type="text/javascript" src="http://www.quillpad.in/js/jquery.js"></script>
+		
+       	
+		
+
+</head>
+<body>
+    
+
+<form action="" method="GET">
+					
+					<div style="float:left; width:40%; background: red;" class="left">
+					<input type="text" name="something1" rows="09" id="hindi_demo" class="hindi-input" />
+					</div>
+
+					<div style="float:right; width:40%; background: green;" class="right">
+
+					<input type="text" name="something2" rows="09" id="hindi_demo2" class="hindi-input" />
+						
+					</div>
+					
+					<hr />
+
+					
+					
+				<input type="submit" />
+</form>
+
+
+	
+	<script type="text/javascript" src="./js/config_.js"></script>
+	<script type="text/javascript" src="./js/quill_v2.js"></script>
+	<script type="text/javascript" src="./js/hindi.js"></script>
+	<script>
+
+	function guidGenerator() {
+    var S4 = function() {
+       return (((1+Math.random())*0x10000)|0).toString(16).substring(1);
+    };
+    return (S4()+S4()+"-"+S4()+"-"+S4()+"-"+S4()+"-"+S4()+S4()+S4());
+}
+
+
+		DEMOS_ACTIVATED = []; 
+		var init_language_cap = "Hindi";
+		init_language_cap = "Hindi";
+
+		var init_language = init_language_cap.toLowerCase();
+		
+		$('.hindi-input').each(function(){
+			var id = guidGenerator();
+			$(this).attr('id' , id);
+			Quill.init( id, 'langlist1', null, init_language_cap, {'showFormatPanel':false, 'showLangAll': false});
+        Quill.loadText("", id );
+
+		});
+
+		
+		// Quill.init( init_language + '_demo2', 'langlist1', null, init_language_cap, {'showFormatPanel':false, 'showLangAll': false});
+  //       Quill.loadText("", init_language + '_demo2');
+
+		
+
+
+	
+		
+
+		
+		
+	
+
+				
+
+	
+	</script>
+	
+</body>
+</html>
